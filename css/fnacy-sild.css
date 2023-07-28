@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4{
+    margin: 1.5em 0;
+    text-align: center;
+}
+.container{
+    width: 90%;
+    margin: 0 auto;
+}
+#work .row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+#work .col{
+    width: 32%;
+    aspect-ratio: 4/3;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 3);
+}
+#work .box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

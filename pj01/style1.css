@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+*{margin: 0; padding: 0;box-sizing: border-box;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+body{
+    width: 1200px; 
+    /* border: 3px solid #000000; */
+    margin:auto;
+    background-image: url(back4.png) ;
+}
+
+ /* header */
+
+header{height: 150px;}
+
+.title h1{
+    font-size: 3rem;
+    text-align: center;
+    line-height: 3;
+}
+.title span{
+    font-size: 2rem;
+}
+
+/* aside */
+
+aside{
+    height: 700px;}
+
+.image img{
+    width: 1200px;
+}
+
+
+/* section */
+
+section{
+    height: auto;}
+
+.concept{
+    text-align: center;
+    padding-top: 8rem;
+}
+
+
+/* section1 */
+
+section1{
+    width: 1200px;
+    text-align: center;
+}
+.design{padding-top: 5rem;
+}
+
+.design{padding-top: 5rem;}
+
+.web{margin-left: 1rem;}
+
+.design h1{
+    font-size: 3rem;
+    text-align: center;
+    line-height: 3;
+}
+
+.design .web{
+    overflow: scroll;
+    border:solid 1px #444;
+    height: 500px;
+    width: 800px;
+    float: left;
+}
+
+    
+.design .web h3{
+    font-size: 1.7rem;
+}
+
+.design .web img{
+    width: 100%;
+    border-top: 1px solid #444;
+}
+
+
+.mobile{margin-left: 1rem;}
+
+.design .mobile{
+    overflow: scroll;
+    border:solid 1px #444;
+    height: 500px;
+    width: 350px;
+    float: left;
+}
+
+.design .mobile img{
+    width: 100%;
+    border-top: 1px solid #444;
+}
+
+
+.design .mobile h3{
+    font-size: 1.7rem;
+}
+
+
+  
+/* footer */
+
+footer{
+    clear: both;
+    width: 1200px;
+    text-align: center;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    padding-top: 5rem;}
+
+.btn a{
+    text-decoration: none;
+    color: #444;
+    background-image: none;
+}
+
+.btn {
+  overflow: visible;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  font: inherit;
+  line-height: normal;
+  cursor: pointer;
+  --moz-user-select: text;
+  display: block;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 16px 36px 22px;
+  background-color: #fff;
+  color: #444;
+  border: 2px solid #444;
+  border-radius: 6px;
+  margin-bottom: 16px;
+  transition: all 0.5s ease;
+  width: 8rem;
+  height: 4rem;
+}
+
+.btn:-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+.btn--stripe {
+  overflow: hidden;
+  position: relative;
+}
+.btn--stripe:after {
+  content: "";
+  display: block;
+  height: 7px;
+  width: 100%;
+  background-image: repeating-linear-gradient(45deg, #444, #444 1px, transparent 2px, transparent 5px);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border-top: 1px solid #444;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-size: 7px 7px;
+}
+.btn--stripe:hover {
+  background-color: #ddf5ff;
+  color: #fff;
+  border-color: #444;
+}
+
+.btn--stripe:hover:after {
+  background-image: repeating-linear-gradient(45deg, #444, #444 1px, transparent 2px, transparent 5px);
+  border-top: 1px solid #444;
+  animation: stripe-slide 12s infinite linear forwards;
+}
+.btn--large {
+  width: 50%;
+}
+.btn--radius {
+  border-radius: 36px;
+}
+
+
+
+/* 화면너비 0~768px */
+@media (max-width:768px){
+    .project::-webkit-scrollbar {
+      width: 10px;
+     }
+  
+    .project{
+      width: 758px;
+    }
+    .title{
+      width: 758px}
+    .title h1{
+      text-align: center;
+      padding-left: 1rem;
+    }
+    .image{
+      width: 758px;
+      height: auto;
+    }
+    .image img{
+      width: 740px;}
+  
+    .concept{
+      width: 758px;
+      padding-top: 1rem;
+    }
+  
+    .concept img{
+      width: 100%;
+    }
+  
+    .design{
+      width: 758px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 2rem;
+    }
+    .design h1{
+      text-align: initial;
+    }
+    .design .web{
+      height: 500px;
+      width: 650px;
+      float: none;
+      }
+    
+  
+    .design .mobile{
+      height: 500px;
+      width: 350px;
+      
+    }
+  
+    .footer{
+      width: 758px;
+    }
+  
+  }
+  
+  /* 화면너비 0~420px */
+  @media (max-width:420px){
+  
+  .project{
+    width: 350px;
+  }
+  .title{
+    width: 350px}
+  
+  .title h1{
+    text-align: center;
+    padding-left: 1rem;
+    font-size: 2rem;
+  }
+  .image{
+    width: 350px;
+    height: auto;
+  }
+  .image img{
+    width: 350px;}
+  
+  .concept{
+    width: 350px;
+    padding-top: 1rem;
+  }
+  
+  .concept img{
+    width: 100%;
+  }
+  
+  .design{
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+  .design h1{
+    text-align: initial;
+    font-size: 2rem;
+    padding-left: 1rem;
+  }
+  .design .web{
+    height: 500px;
+    width: 290px;
+    float: none;
+    }
+  
+  .design .mobile{
+    height: 500px;
+    width: 290px;
+  }
+  
+  .footer{
+    width: 350px;
+  }
+  
+  }

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이미지 갤러리</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.3.0/remixicon.css" integrity="sha512-0JEaZ1BDR+FsrPtq5Ap9o05MUwn8lKs2GiCcRVdOH0qDcUcCoMKi8fDVJ9gnG8VN1Mp/vuWw2sMO0SQom5th4g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/img-grallery.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Image Gallery</h1>
+        <li><a href="portfolio.html"><i class="ri-arrow-left-circle-fill"></i></a></li>
+        <div class="image-container">
+            <a href="img_p/pdf/brochure.pdf">
+            <div class="image"><img src="img_p/갤러리/보기0.jpg" alt="리플렛_목업">
+            </div></a>
+            <a href="img_p/pdf/BI(logo).pdf">
+            <div class="image"><img src="img_p/갤러리/sign_BI.jpg" alt="로고_목업">
+            </div></a>
+            <a href="img_p/pdf/free.pdf">
+            <div class="image"><img src="img_p/갤러리/free.jpg" alt="프리_목업">
+            </div></a>
+            <a href="img_p/pdf/poster.pdf">
+            <div class="image"><img src="img_p/갤러리/poster(0).jpg" alt="포스터(1)_목업">
+            </div></a>
+            <a href="img_p/pdf/pakge.pdf">
+            <div class="image"><img src="img_p/갤러리/pakg.jpg" alt="패키지_목업">
+            </div></a>
+            <a href="img_p/pdf/book.pdf">
+            <div class="image"><img src="img_p/갤러리/전체_1.jpg" alt="북커버01"></div>
+            </a>
+
+        </div>
+
+        <div class="popup-image">
+            <span>&times;</span>
+            <img src="" alt="popup">
+        </div>
+    </div>
+
+    <script>
+        document.querySelectorAll('.image-container img').forEach(image =>{
+            image.onclick = () =>{
+                document.querySelector('.popup-image').style.display = 'block';
+                document.querySelector('.popup-image img').src = image.getAttribute('src');
+            }
+        });
+
+        document.querySelector('.popup-image span').onclick = () =>{
+           document.querySelector('.popup-image').style.display = 'none';
+        }
+    </script>
+</body>
+</html>
